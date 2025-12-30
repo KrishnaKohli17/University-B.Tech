@@ -1,12 +1,9 @@
 #include <stdio.h>
-
 int main()
 {
     int i, choice, qty;
     int exitFlag = 0;
-
     const int ITEMS = 6;
-
     char itemNames[][25] = {
         "Pizza",
         "Burger",
@@ -15,7 +12,6 @@ int main()
         "Sandwich",
         "Ice Cream"
     };
-
     float itemPrices[] = {
         250.0,
         120.0,
@@ -24,30 +20,23 @@ int main()
         100.0,
         90.0
     };
-
     int itemQty[6] = {0, 0, 0, 0, 0, 0};
-
     float subtotal = 0.0;
     float gst = 0.0;
     float discount = 0.0;
     float netAmount = 0.0;
-
     int customerCount = 1;
-
     printf("\n<_><_><_><_><_><_><_><_><_><_><_><_><_><_><_>\n");
     printf("        WELCOME TO KK RESTAURANT\n");
     printf("<_><_><_><_><_><_><_><_><_><_><_><_><_><_><_><_>\n");
-
     while (!exitFlag)
     {
         printf("\n-----------------------------------------------\n");
         printf("Customer No: %d\n", customerCount);
         printf("-----------------------------------------------\n");
-
         while (1)
         {
             printf("\n<_><_><_><_><_><_> RESTAURANT MENU <_><_><_><_><_><_>\n");
-
             for (i = 0; i < ITEMS; i++)
             {
                 printf("%d. %-15s - Rs %.2f\n",
@@ -55,15 +44,12 @@ int main()
                        itemNames[i],
                        itemPrices[i]);
             }
-
             printf("7. Show Current Order\n");
             printf("8. Clear Current Order\n");
             printf("0. Generate Final Bill\n");
             printf("===============================================\n");
-
             printf("Enter your choice: ");
             scanf("%d", &choice);
-
             if (choice == 0)
             {
                 break;
@@ -73,7 +59,6 @@ int main()
                 printf("Enter quantity for %s: ",
                        itemNames[choice - 1]);
                 scanf("%d", &qty);
-
                 if (qty <= 0)
                 {
                     printf("Invalid quantity! Try again.\n");
@@ -113,14 +98,11 @@ int main()
                 printf("Invalid choice! Try again.\n");
             }
         }
-
         subtotal = 0.0;
-
         for (i = 0; i < ITEMS; i++)
         {
             subtotal += itemQty[i] * itemPrices[i];
         }
-
         if (subtotal == 0)
         {
             printf("\nNo items ordered.\n");
@@ -137,7 +119,6 @@ int main()
             {
                 discount = 0.0;
             }
-
             netAmount = subtotal + gst - discount;
 
             printf("\n\n================ FINAL BILL ===================\n");
@@ -146,26 +127,21 @@ int main()
                    "Item",
                    "Qty",
                    "Total");
-
             int srNo = 1;
-
             for (i = 0; i < ITEMS; i++)
             {
                 if (itemQty[i] > 0)
                 {
                     float itemTotal =
                         itemQty[i] * itemPrices[i];
-
                     printf("%-5d %-15s %-6d Rs %-10.2f\n",
                            srNo,
                            itemNames[i],
                            itemQty[i],
                            itemTotal);
-
                     srNo++;
                 }
             }
-
             printf("-----------------------------------------------\n");
             printf("Subtotal          : Rs %.2f\n", subtotal);
             printf("GST (5%%)          : Rs %.2f\n", gst);
@@ -176,18 +152,15 @@ int main()
             printf("        THANK YOU! VISIT AGAIN!\n");
             printf("===============================================\n");
         }
-
         for (i = 0; i < ITEMS; i++)
         {
             itemQty[i] = 0;
         }
-
         int nextChoice;
         printf("\n1. New Customer");
         printf("\n2. Exit");
         printf("\nEnter your choice: ");
         scanf("%d", &nextChoice);
-
         if (nextChoice == 1)
         {
             customerCount++;
@@ -198,7 +171,7 @@ int main()
             exitFlag = 1;
         }
     }
-
     printf("\nSystem Closed Successfully.\n");
     return 0;
 }
+
