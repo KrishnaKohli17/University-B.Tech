@@ -60,5 +60,6 @@ Bridge the gap between theoretical university concepts and practical implementat
 Showcase a clear evolution of coding skills over the 4-year period.
 
 📬 Contact
-LinkedIn: [Your LinkedIn Link]
+LinkedIn: (https://www.linkedin.com/in/krishna-%E2%80%8E-9a056534b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
 Email: [krishna121729@gmai.com]
