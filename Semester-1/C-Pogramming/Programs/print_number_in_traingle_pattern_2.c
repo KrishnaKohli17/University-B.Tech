@@ -1,3 +1,7 @@
+/*WAP to print number pattern :-
+1
+2 2
+3 3 3*/
 #include<stdio.h>
 int main(){
   for(int i=1;i<4;i++){
