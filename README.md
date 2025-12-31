@@ -23,6 +23,7 @@ The repository is organized by semester. Each semester folder contains subfolder
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Year 1
+
 Semester 1: Introduction to Programming, Logic Building, Front-End_Development and MySQL.
 
 Languages: [C, Python, HTML, CSS, JavaScript, MySQL]
