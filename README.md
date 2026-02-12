@@ -24,17 +24,18 @@ The repository is organized by semester. Each semester folder contains subfolder
 
 Year 1
 
-Semester 1: Introduction to Programming, Logic Building, Front-End_Development and MySQL.
+Semester 1: Introduction to Programming, Logic Building, Front-End_Development and Data Science.
 
 Languages: [C, Python, HTML, CSS, JavaScript, MySQL]
 
 Highlights: Basic coding, Databasis, Database Managment, Probelm Solving, WebDeveploment, Introduction to [ Artificial Intelligence, Machine Learning, Deep Learning, Neural Network].
 
-Semester 2: XXX.
+Semester 2: Enhancing Computational Logic And Efficiency In C/C++ With Opps And DSA, Python and BackEnd.
 
-Languages: [ ]
+Languages: [DSA with C/C++, OPPs with C++, Python, JavaScript, Discrete Mathematics]
 
-Highlights: XXX.
+Highlights:Studying With Discrete Mathematics Along With Transitioning From Basic Coding To Complex Problem-Solving Using DSA (Data Structures & Algorithms),
+OOPs (Object Oriented Programs) And Learning Complex Artificial Intelligence,Machine Learning, Deep Learning, Neural Network.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
