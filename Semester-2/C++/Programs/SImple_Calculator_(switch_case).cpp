@@ -4,7 +4,11 @@ int main(){
   char op;
   float num1,num2;
   cout<<"Enter operator (+,-,*,/): ";
-  cin>>num1>>num2;
+  cin>>op;
+  cout<<"Enter the number 1: ";
+  cin>>num1;
+  cout<<"Enter the number 2: ";
+  cin>>num2;
 
   switch(op){
     case '+' : cout<<num1+num2;break;
