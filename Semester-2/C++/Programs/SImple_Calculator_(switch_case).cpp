@@ -11,11 +11,11 @@ int main(){
   cin>>num2;
 
   switch(op){
-    case '+' : cout<<num1+num2;break;
-    case '-' : cout<<num1-num2;break;
-    case '*' : cout<<num1*num2;break;
-    case '/' : cout<<num1/num2;break;
+    case '+' : cout<<"Addition of 2 numbers: "<<num1+num2;break;
+    case '-' : cout<<"Subtraction of 2 numbers: "<<num1-num2;break;
+    case '*' : cout<<"Multiplication of 2 numbers: "<<num1*num2;break;
+    case '/' : cout<<"Division of 2 numbers: "<<num1/num2;break;
  default:cout<<"Error! Operator is not correct";break;
   
 return 0;
-}
+}}
