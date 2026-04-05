@@ -18,3 +18,8 @@ public:
             }
         }
 };
+
+int main(){
+  int a[5]={1,4,6,8,10};
+  Search obj(4,6);
+  obj.find()}
